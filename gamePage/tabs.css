@@ -1,0 +1,64 @@
+/* Tabs */
+
+#labLogo{
+	position: fixed;
+	background-color: #fcfcf9;
+	top: 5px;
+	right: 0px;
+	width: 56px;
+	height: 38px;
+	background-image: url('./Lab_tab.gif');
+	background-position: left center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	-webkit-transition: width .1s;
+}
+
+#labLogo:hover
+{
+	width: 70px;
+	-webkit-transition: width .1s;
+}
+
+#ksLogo{
+	position: fixed;
+	background-color: #000000;
+	top: 52px;
+	right: 0px;
+	width: 56px;
+	height: 38px;
+	background-image: url('./KS_tab.gif');
+	background-position: left center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	-webkit-transition: width .1s;
+}
+
+#ksLogo:hover
+{
+	width: 70px;
+	-webkit-transition: width .1s;
+}
+
+#bggLogo{
+	position: fixed;
+	background-color: #343b7d;
+	top: 99px;
+	right: 0px;
+	width: 56px;
+	height: 38px;
+	background-image: url('./BGG_tab.gif');
+	background-position: left center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	
+	cursor: pointer;
+	-webkit-transition: width .1s;
+}
+
+#bggLogo:hover
+{
+	width: 70px;
+	-webkit-transition: width .1s;
+}

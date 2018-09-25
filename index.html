@@ -1,7 +1,69 @@
 <!DOCTYPE html>
-<html>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+<html lang="en-US">
+	<head>
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+		<title>Laboratory</title>
+		<meta charset="UTF-8">
+		<link href="lab.css" rel="stylesheet" type="text/css">
+		<!-- IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	</head>
+	<body> 
+		<script> 
+			if (navigator.appVersion.indexOf("Win")!=-1)
+			{
+				console.log(navigator.appVersion.indexOf("Win"));
+				$('body').addClass("arialFallback");
+			}
+		</script>
+		
+		<div id='sitecontainer'>
+			<div id='topBar'>
+				<div id='social'>
+					<div id="contactInfo" style="cursor: pointer;" onmouseout="resetTextColor(this)" onmouseover="setRandomTextColor(this)"><!--<a href="mailto:clayton@laboratory.vg" class="topA">contact</a>-->New Contact Soon!</div>
+					<a href="https://www.twitter.com/laboratorygames"><img src="./images/twitter.png" alt="twitter"></a>
+					<a href="https://www.youtube.com/laboratorygames"><img src="./images/youtube.png" alt="youtube"></a>
+					<!--<a href="https://laboratorygames.tumblr.com/"><img src="./images/tumblr.png"></a>-->
+					<a href="https://www.facebook.com/LaboratoryGames"><img src="./images/facebook.png" alt="facebook"></a>
+				</div>	
+			</div>
+			
+			
+				
+			<div id="contentBar" style="display: flex;
+										flex-flow: column;
+  										justify-content: center;
+  										align-items: center;
+  										height: 22em;
+  										max-height: none;
+  										padding-bottom: 2em;">
+				<div id="subContent" style="left: 0; 
+											margin-left: 7%; 
+											margin-right: 5%; 
+											width: auto;">
+					
+						<h2 style="margin-bottom: 0.3em;">Hello, stranger.</h3> 
+						<p style="margin-top: 0;">Laboratory will be back onling again soon. In the meantime, if you're looking for the rules for our games, you can find them here:</p> 
+
+						<ul>
+							<li><a href="https://drive.google.com/file/d/0B08zZQwsRqktVUJVaG5OWEdELTA/view?usp=sharing">Shift</a></li> 
+							<li><a href="https://drive.google.com/file/d/0B08zZQwsRqktdW96NmtnamU1czA/">Province</a></li>
+							<li><a href="./shadow/rules/index.html">Shadow of the Elder Gods</a></li>
+							<li><a href="./swords/rules/index.html">100 Swords</a></li>
+						</ul>
+
+						<p>If you are looking for support or are curious about ordering something, that will also be available again soon. Hoping for mid-to-late October, but that depends on a number of factors.</p>
+
+						<p><strong><em>"Where did you go?"</em></strong></p>
+						<p>The short version is: We went from effectively broke to literally broke. It's taken some time to figure out where things stand, and it will be a bit until I'm out of the woods. More soon.</p>
+						<p style="text-align: right">-Clayton</p>
+
+				</div>
+
+			</div>
+			
+		</div>
 	</body>
 </html>

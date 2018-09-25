@@ -1,0 +1,743 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>100 Swords: Rules</title>
+	<meta name="viewport" content="width=device-width" />
+	<link href="swords.css" rel="stylesheet" type="text/css">
+   	</head>  
+   	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="parallax.js"></script>
+   		<meta property="og:image" content="boxMock.png" />
+
+	    
+	<body>			
+		<div id=top><a class="anchor" name="0">s</a></div>
+		<div id="ruleFrame">
+				<div id="logo" class="printLeft"><img src="logo.png"></div>		
+				<div id="stats"><img src="gameStatsIcons.png"></div>		
+				<h3 style="margin-left:-75px; font-size:3em; margin-top:5px;">RULES OF PLAY</h3>
+				<h3 style="margin-left:-75px; padding-left: 45px; padding-right: 45px; font-size:2em;">¡ version 1.3 (season 2 release) ¢<br>™ rules subject to change £</h3>
+				<h3 style="margin-left:-75px; padding-left: 45px; padding-right: 45px; font-size:2em; font-weight:normal;"><a href="https://drive.google.com/file/d/0B08zZQwsRqktd2Rha3R4SzF4VFU/view" style="color:e9f9ff;">Click here for the printable PDF version (1.0)!</a></h3>
+				<div class="section">
+					
+					<div style="white-space: nowrap;">
+						<div style="display: inline-block; width: 50%; white-space: normal; text-align: center;">
+							<h3>Quickstart Rules</h3>
+							<p>Just starting out? Click the card to reveal the quickstart rules! ⇒</p>
+						</div>
+						<div style="display: inline-block; width: 50%; white-space: normal; text-align: center;">
+							<div id="qsbtn">
+								<img id="qsA" src="quickstartA.png" alt="Reveal Quickrules" style="margin-left: 0;"/>
+								<img id="qsB" src="quickstartB.png" alt="Hide Quickrules" style="margin-left: 0; display: none;"/>
+							</div>
+						</div>
+						<script>
+							$('#qsbtn').click(function() {
+								$('#quickstart').toggle();
+								$('#qsA').toggle();
+								$('#qsB').toggle();
+							});
+						</script>
+					</div>
+					<div id="quickstart" style="display: none;">
+						<hr/>
+						<hr/>
+						<p>Follow the setup rules on the reference card provided or see the <a href="#3">Setup section</a> below to get the Dungeon prepared for play.</p>
+	
+						<p>The goal of 100 Swords is <span class="gold">to have the cards that are worth most gold</span> when the game ends. The <span class="gold">gold value</span> is shown in top right corner of all cards (except rental items, which you don't need to worry about yet).</p>
+						
+						<p>Each player starts the game with 9 starting items (with a <span class="kirsty">¡</span> at the bottom instead of a cost symbol) which make up your personal deck of cards:</p>
+						<div style="white-space: nowrap;">
+							<div style="display: inline-block; width: 50%; white-space: normal;">
+								<ul>
+									<li>6x Crappy Swords</li>
+									<li>2x Boots</li>
+									<li>1x Awkward Sword</li>
+								</ul>
+							</div>
+							<div style="display: inline-block; width: 50%; white-space: normal; text-align: center;">
+								<img src="starteritems.jpg" alt="Starter Items" style="margin-left: 0px;" />
+							</div>
+						</div>
+							
+							<p>At the start of the game both players shuffle and draw a hand of 5 cards from their deck. During your turn, you will be playing cards for their movement <strong>or</strong> strength values. In addition, each card in your hand is also worth one energy (more on that in a moment).</p>
+						
+						<p>First you need to enter the dungeon! Play one <strong>or more</strong> cards for their movement value (next to the boot icon). You may move <strong>up to</strong> that many rooms (cards) forward into the the dungeon (but not past revealed monsters or other Impassable cards). You may not move backwards! Move the tracker card below the dungeon cards to keep track of your position. For example...</p> 
+						<img src="movement.jpg" />
+						<p><strong>Note: Unused movement, strength, or energy does not carry over to future actions.</strong></p> 
+						<p>Next, you must check the room by picking-up the card and looking at it without showing your opponent. All cards have a cost shown at the bottom of their card, otherwise the text of the card will explain how to remove it from the dungeon. Here's how to deal with what you find:</p>
+						
+						<ul>
+							<li>If it’s an item <span class="kirsty">™</span>, you can acquire it by playing cards from your hand sideways as energy until you meet or exceed the energy cost of the item. Each card is worth one energy. Points for strength and movement and also card effects are ignored when cards are played as energy. Place the acquired item directly in your hand!</li>
+							<li>If it’s a monster <span class="kirsty">£</span>, reveal it by placing it back in the dungeon face-up. Be sure to consult the monster's effect text, as it may have an effect that triggers when the card is revealed! When first revealed, a monster is surprised; you may move past it <strong>or</strong> defeat it. If the monster isn’t surprised because it was already revealed, it must be defeated or hidden in order to move to the next room.
+							<p>You can defeat the monster by playing cards from your hand for their strength value (next to the fist icon) until you meet or exceed the strength cost of the monster. When you remove a card from the dungeon with a trophy icon, place it directly into your trophy pile - a third face-up stack of cards adjacent to your deck and discard (these cards contribute to your gold at the end of the game).</p></li>
+							<li>If it’s an obstacle <span class="kirsty">¢</span>, reveal it by placing it back in the dungeon face-up. Obstacles explain what they do and how to clear them from the dungeon.</li>
+							<li>If a the cost icon shows a lock <span class="swords">L</span>, you must play a card with the word “Key” in it’s effect text in order to remove it from the dungeon.</li>
+						</ul>
+						
+						<img src="checkingrooms.jpg" />
+						
+						<p>After handling the card in your current room, you may continue using cards from your hand until you are unable <strong>or</strong> unwilling to move further into the dungeon.</p> 
+						
+						<p>When you’re done, move any cards that remain in hand and any cards played during your turn to your discard. Collapse all of the cards in the dungeon towards the entrance, refill any missing cards (see the <a href="#consolidate">Consolidate section of Turn Order</a> for more), and move the tracker card back outside of the dungeon.</p> 
+						<p><strong>Note: Cards played during your turn are played to an active play area until the end of your turn when they are discarded.</strong></p>
+						
+						<p>At the end of your turn, draw a new hand of 5 cards. If you need to draw a card, and your deck is empty, shuffle your discard and place the cards face-down as your new deck.</p>						
+						
+						<p>The next player many now take their turn, exploring the dungeon from the beginning. <strong>Before entering the dungeon</strong>, you may rent the rental items from the store by paying their energy cost. Place any rental items that you acquire directly in your hand. Rentals have green borders, an <span class="kirsty">R</span> icon on their upper right, but you <strong>must</strong> return them to the store at the end of your turn!</p>
+						<p>Continue taking turns until the card with the <a href="#boss">'Boss' attribute</a> is removed from the dungeon or there aren’t enough cards to refill the dungeon to 5 cards. Then players count up the <span class="gold">gold</span> in their deck, discard, and trophy piles and whoever has the most, wins! Ties go to the player with the most swords.</p>
+						<p><strong>A technical note on playing items: When you play an item, the text resolves immediately. It’s mandatory unless it says “may”. If you’re unable to perform the text specified (ex: retire a card from an empty draw pile), you may still use the card’s strength or movement points. When playing multiple cards, resolve any effect text in the order played.</strong></p>
+						
+						<p>Confused? Continue reading. The rules covered above are discussed in further detail below!</p>
+					</div>
+				</div>
+				
+				
+				<div class="section">
+				
+				<h3>Table of Contents</h3 >
+				<div class="leftColumn">
+					<div id="ToC">
+						<ol>
+							<li><a href="#1">The Basics / How to Win</a></li>
+							<li><a href="#2">Contents</a></li>
+							<li><a href="#3">Setup</a></li>
+							<li><a href="#4">Item Card Description</a></li>
+							<li><a href="#5">Monster Card Description</a></li>
+							<li><a href="#6">Obstacle Card Description</a></li>
+							<li><a href="#7">Turn Breakdown</a></li>
+							<li><a href="#8">Moving In the Dungeon</a></li>
+							<li><a href="#9">Acquiring Items</a></li>
+							<li><a href="#10">Defeating Monsters</a></li>
+							<li><a href="#15">Clearing Obstacles</a></li>
+							<li><a href="#11">General Rules</a></li>
+							<li><a href="#12">Ending the Game</a></li>
+							<li><a href="#13">Glossary</a></li>
+							<li><a href="#19">Multi-User Dungeon Expansion<br/>(3-4 Players)</a></li>
+							<li><a href="#14">Solo Rules</a></li>
+							<li><a href="#18">Optional and Alternate Rules</a></li>
+							<li><a href="#16">Common Questions and Errata</a></li>
+							<li><a href="#17">Credits</a></li>
+						</ol>
+					</div>
+				</div>
+				<div class="rightColumn printHide" style="background-image:url('siteBgLight.jpg'); margin-top:20px; height:495px;"><div class="columnImageOverlay printHide"></div></div>
+				
+				</div>
+				<div class="section">
+					<a class="anchor" name="1"></a>
+					<h3>The Basics / How to Win:</h3>
+					<p>In 100 Swords, you and a friend will compete to explore a dungeon, find items, defeat monsters, and get rich. Each turn presents a new puzzle as you navigate the varying cards in your hand, and the ever changing and sometimes hidden cards of the dungeon! Practically everything you find is worth something in gold - and at the end of the game, <span class="gold">whoever has the most gold wins!</span> If there's a tie, whoever has the most swords wins! The game ends when the dungeon has less than 5 cards or when the <a href="#boss">Boss</a> is defeated!
+					</p>
+					
+				</div>
+				<div class="section">
+					<a class="anchor" name="2"></a>
+						<h3>Contents:</h3>
+						<div class="leftColumn">
+							<ul>
+								<li> 18 Starting Items <span class="kirsty">¡</span></li>
+								<ul>
+									<li> 12 Crappy Swords</li>
+									<li> 2 Awkward Swords</li>
+									<li> 4 Boots</li>
+								</ul>
+								<li> 3 Rental Items <span class="kirsty">R</span></li>
+								<li> 16 Dungeon Items <span class="kirsty">™</span></li>
+							</ul>
+						</div>
+						<div class="rightColumn">
+							<ul>
+								<li> 13 Monsters <span class="kirsty">£</span></li>
+								<ul>
+									<li> 12 Standard Monsters</li>
+									<li> 1 Boss </li>
+								</ul>
+								<li> 3 Obstacles <span class="kirsty">¢</span></li>
+								<li> 1 Movement Tracker</li>
+								<li> 1 Reference Card</li>
+							</ul>
+						</div>
+						<br>
+						<br>
+						<img src="contents.jpg">
+						<img src="contents2.jpg">
+				</div>
+				<div class="section">
+					<a class="anchor" name="3"></a>
+					<h3> Setup: </h3>
+					
+					<ol>
+						<li>
+							Set aside the Boss card you wish to use, as well as the movement tracker.
+						</li>
+					
+						<li>
+							Both players will start with a personal deck consisting of 6 'Crappy Swords,' 1 'Awkward Sword,' and 2 'Boots' cards - all of which are marked with the <span class="kirsty">¡</span> icon.
+						</li>
+						<li>
+							To the right of each player’s personal deck, make room for their discard. Above those, make room for their trophy pile.
+						</li>
+						<li>
+							Place the 3 rental items (which are easily identified by having green borders and being marked with an <span class="kirsty">R</span>) where both players can reach them.
+						</li>
+						<li>
+							Shuffle all other cards (items, monsters, obstacles) face down to form the dungeon deck.  
+						</li>
+						<li>
+							Without looking at them, draw 9 cards from the dungeon deck, add the Boss card to them, and shuffle. Place those 10 cards at the bottom of the dungeon deck.
+							<ul>
+							<li>
+								If you're playing with a Dungeon Builder Set, <a href="#18">see the <strong>Optional and Alternate Rules</strong> section</a>.
+							</li>
+							</ul>
+						</li>
+					</ol>
+					
+					
+					<div class="leftColumn" style="margin-top:-1em;">
+					<ol start="7">
+						<li>
+							Drawing from the dungeon deck, place 5 face down cards in a row where both players can reach them - this row of 5 cards is called the dungeon. Each card is a room in the dungeon.
+						</li>
+						<li>
+							To the right of the dungeon deck, make sure there’s room for the vaporized pile.
+						</li>
+						<li>
+							Then, both players shuffle their decks and draw five cards.
+						</li>						
+						<li>
+							Choose a player to go first. 
+							<input  class="printHide" id="coinButton" type="button" value="Click here to flip a coin!" onclick="flipResult()" style="width:100%; height:40px; margin-top:36px; font-size:1em; border-radius:.5em; background-color:white;" /> 
+
+							
+						</li>
+						
+					</ol>
+					</div>
+					<div class="rightColumn" style="text-align:right; margin-top:-1em;"><img src="player.jpg"></div>
+					<br><br>
+					<img src="setup.jpg">
+					<br> 					
+				</div>
+				<div class="section">
+					<a class="anchor" name="4"></a>
+					<h3>Item Card Description:</h3>
+					<br>
+					<img src="itemDescription.jpg">
+					<p>
+						In 100 Swords, not only will you lay the smackdown on some monsters, but you'll be finding and acquiring items as well. As you move through the dungeon, you'll be checking the rooms you end up in - if you check a room and it has an item, you may replace that card in the dungeon face-down (so your opponent doesn’t know what it is) or reveal it.
+						<br><br>
+						There are a few types of items in 100 Swords:
+						<ul>
+							<li> 
+								<strong>Starter Items</strong> are the cards that make up your starting deck and are identified by a <span class="kirsty">¡</span> instead of a <span class="kirsty">™</span>. 
+							</li>
+							<li>
+								<strong>Dungeon Items</strong> are items you’ll find in the dungeon and acquire by playing energy equal to or greater than their cost while in their room. They're marked by a <span class="kirsty">™</span>.
+							</li>
+							<li>
+								<strong>Rental Items</strong> have green borders and an <span class="kirsty">R</span> icon on their upper right. You can acquire them by paying their cost in energy before you step into the dungeon. At the end of your turn, instead of moving rentals to your discard, return all rentals back to  their place.
+							</li>
+						</ul>
+							When you play an item for movement or strength, if it has an effect, that effect happens immediately. The order of operations are as follows:
+							<ol>
+								<li>
+									Play an item for movement or strength.
+								</li>
+								<li>
+									Perform that item's effects.
+								</li>
+								<li>
+									Spend those points to move deeper into the dungeon or defeat a monster.
+								</li>
+							</ol>
+							<br>
+							If an item has you play a card for energy for an effect, it does not count as spending points and does not zero out your movement or strength.
+							<br>
+							Players may move on or through revealed items in the dungeon.
+							<br><br>
+							When you acquire an item, you must show that item to your opponent. Acquired items are not kept secret.
+					</p>
+					<h3>Playing an Item for Energy:</h3>
+					<br>
+					<img src="energyDescription.jpg">
+					<p>
+					
+				</div>	
+				<div class="section">
+					<a class="anchor" name="5"></a>
+				
+					<h3>Monster Card Description:</h3>
+					<br>
+					<img src="monsterDescription.jpg">
+					<p>
+						You'll be duking it out with monsters as you explore the dungeon. If you check a room and it contains a monster, that card must be revealed (turned face up).
+					</p>
+					
+					<p>
+						While moving through the dungeon, you cannot move past a monster that has already been revealed - they're standing vigilant, ready to attack! But if you move to a room with a face-down card and reveal a monster, it is surprised and you may move past it. Once you leave its room, that monster is no longer surprised, and will once again act like a wall.
+					</p>
+					<p>
+						You may attack a monster the same turn it’s revealed.
+					</p>
+					<p>
+						You can only attack a revealed monster. If for some reason the monster in your room was hidden after you just revealed it, you cannot attack it.
+					</p>
+				</div>
+				<div class="section">	
+					<a class="anchor" name="6"></a>			
+					<h3>Obstacles/Locked<br>Card Description:</h3>
+					<br>
+					<img src="obstacleDescription.jpg">
+					<p>
+					Lastly, you'll be coming across obstacles! If you check a room in the dungeon and it's an obstacle, it must be revealed. You can move past obstacles unless otherwise stated.
+					</p>
+					<p>
+					Obstacles are cleared (moved to your trophy pile) by fulfilling the requirements written in their effects. They may be cleared for strength or energy, but some may require revealing a type of card, or moving past them, etc.
+					<br><br>
+					Locked cards are marked by the <span class="swords">L</span> symbol - instead of paying their cost with energy or strength, you must play a card with the 'Key' attribute (written in its effects) while in the locked card's room.
+					</p>
+				</div>
+				<div class="section">
+				<a class="anchor" name="7"></a>
+					<h3>Turn Breakdown:</h3>
+					<ol>
+						<li> Start of Turn </li>
+						<li> <strong>Rent</strong></li>
+						<ul>
+							<li> Rent any number of rentals by paying their cost. </li>
+							<li> You cannot acquire a rental item once you enter the dungeon. </li>
+						</ul>
+						<li> <strong>Move/Defeat/Acquire/Clear</strong> (in any order, as many times as you'd like/can)</li>
+						<ul>
+							<li> Play one or more cards for their Movement Value and move up to that many rooms from left to right into the dungeon (you can’t move back, you must move from left to right).
+								<ul>
+									<li> When you move, you must check the room you moved to.</li>
+								</ul>
+							</li>
+							<li> Play cards for their energy or strength (usually to acquire, defeat, or clear a card).
+								<ul>
+									<li> You can only acquire, defeat, or clear a card in your room. i.e. in order to acquire an item in the third room of the dungeon, you must move there first.</li>
+								</ul>
+							</li>
+						</ul>
+						<li> <strong>Discard</strong> anything you played that turn and all remaining cards from your hand. Do not discard any rental items, instead place them back in the rental area.</li>
+						<li><a class="anchor" name="consolidate"></a> <strong>Consolidate</strong> the dungeon.</li>
+						<ul>
+							<li> Slide cards from the right to left to fill in any empty rooms.</li>
+						</ul>
+						<li> <strong>Refill</strong> any empty rooms in the dungeon with cards from the Dungeon Deck until there are 5 cards in the dungeon.</li>
+						<li style="color:red; font-weight:bold;">  If there are no cards in the dungeon deck, and there are less than 5 in the dungeon - or a card with the <a href="#boss">'Boss' attribute</a> has been defeated, acquired, or cleared this turn - the game is over.</li>
+						<li> <strong>Draw</strong> a new hand of 5 cards from your deck.</li>
+						<li> End of Turn - The <strong>next player</strong> starts their turn.</li>
+					</ol>
+					
+					<img src="consolidateRefill.jpg">
+
+				</div>
+								
+				<div class="section">
+				<a class="anchor" name="8"></a>
+					<h3> Moving In the Dungeon: </h3>
+					
+					<p>
+						Play as many item cards from your hand as you want for their movement value. You may move up to the sum of the movement of cards played. i.e. if you’ve played two cards for a total of 3 movement points, you may move 1, 2, or 3 rooms into the dungeon. If you have 4 movement points and you only move two rooms, any left over points are reset to zero and don’t carry over to your next movement. 
+					</p>
+					<p>
+						Empty rooms (spaces where cards used to be but were removed for one reason or another) are still considered rooms that must be moved through. 
+					</p>
+					<p>
+						You cannot move backwards, so if you’re in the fifth room of the dungeon and have nothing left you’re able to do, you must end your turn. 
+					</p>
+					<p>
+						You start your turn outside of the dungeon, so you must play at least 1 movement to get to the first room of the dungeon.
+					</p>
+					<p>
+						Feel free to use the movement tracker to keep track of which room you are in. It’s especially useful in complex or technical turns.
+					</p>
+					
+					<img src="movement.jpg">
+				</div>
+				
+				<div class="section">
+				<a class="anchor" name="9"></a>
+					<h3>Acquiring Items:</h3>
+						<p>
+						You need to spend energy to acquire items, and you can gain 1 energy for each item you play from your hand horizontally. 
+						<br><br>
+						If you’re in a room with an item that costs 3 energy, you can play three items for energy to acquire it. Any items played for energy do not trigger their effects unless otherwise stated. Newly acquired cards are drawn into your hand where you may use them that same turn.
+						</p>
+						<p>
+						Some items have a locked icon instead of an energy cost. A locked item's cost is payed by playing a card with the 'Key' attribute while in its room. When you do, you may acquire the item and draw it into your hand.
+						</p>
+						<p>
+						If an item card has the trophy icon, when it’s acquired, move it to your trophy pile instead of your hand.
+						</p>
+					<br>
+					<img src="acquireing.jpg">
+				</div>
+				<div class="section">
+					<a class="anchor" name="10"></a>
+					<h3>Defeating Monsters:</h3>
+					<p>You can defeat a monster in your current room by playing cards for their strength equal to or greater than the monster’s cost. Defeated monsters are placed in your trophy pile.</p>
+					<br>
+					<img src="defeating.jpg">
+				</div>
+				<div class="section">
+					<a class="anchor" name="15"></a>
+					<h3>Clearing Obstacles:</h3>
+					<p>Obstacles can take a lot of different forms - they might be doors, pitfalls, shrines, or shops. What they have in common is that they're typically cleared in ways that monsters or items aren't. An obstacle will say how it is cleared on the card. Fulfill its demands and you clear it (it moves to your trophy pile).</p>
+					<br>
+					<img src="clearing.jpg">
+				</div>
+
+				<div class="section">
+					<a class="anchor" name="11"></a>
+					<h3>General Rules:</h3>
+					<p>
+					<li>
+						If at any time your personal deck is empty and you need to draw from it (or interact with it in any way), reshuffle your discard pile to replenish your deck.
+					</li>
+					<li>
+						While in the dungeon, you can only interact with the room you’re in (the card you’ve moved to). You can’t attack something further away or acquire a card that was earlier in the dungeon.
+					</li>
+					<li>
+						You will play cards (place on the table from your hand) to gain movement points, strength points, and energy points. If you ever spend any type of point in any amount, all types of points are reset to zero - no points are left over.
+					</li>
+					<li>
+						When you play a card, if it has an effect, you must perform the effect immediately. i.e. If you play a card for 2 movement, and it has an effect, you must do the effect before you move deeper into the dungeon. 
+					</li>
+					<li>
+						If you play a card for energy its effects do not trigger unless otherwise stated.
+					</li>
+					<li>
+						You cannot play a single card for multiple types of points, it must be played for movement, strength, or energy.
+					</li>
+					<li>
+						You can only spend points on a single action, you can’t split them between two. i.e. If you use an item that gives you 3 energy, you can’t acquire all three rentals that cost 1 energy each - and if you had 3 energy and rented 1 rental card for 1 energy, you would be back at 0 energy.
+					</li>
+					<li>
+						All cards played during your turn will move to your discard pile at the end of your turn. If you must replenish your deck in the middle of your turn, do not reshuffle any cards you played that turn into your deck - they'll move to your discard at the end of your turn.
+					</li>
+					<li>
+						Cards you acquire from the dungeon during your turn without the trophy icon are drawn straight into your hand where you can immediately use them.
+					</li>
+					<li>
+						If a card has a trophy icon on it, when it’s defeated, acquired, or cleared, it’s moved to your trophy pile instead of your hand.
+					</li>
+					<li>
+						There should always be five cards in the dungeon at the start of a player’s turn. If that’s impossible (there aren’t enough cards in the dungeon deck), the game is over.
+					</li>
+					<li>
+						When you play a card with an attribute like 'Key', you may still spend whatever you played it for (movement or strength).
+					</li>
+					<li>
+						When revealing multiple cards due to the effects of a card, you may reveal any cards in any order, not just from left to right. The order you reveal cards can give you the advantage - think carefully!
+					</li>
+					<li>
+						When a card says to retire or vaporize a card in your deck or discard pile, first choose where you're retiring it from, then look through your selection for a card to retire. Once you've chosen where you're retiring or vaporizing from, you can't change your selection.
+					</li>
+					<li>
+						If a card has you look through your deck to find a card for one reason or another, shuffle it before resuming play.
+					</li>
+					<li>
+						If somehow a starting item ends up in the dungeon, they cost 1 energy to acquire.
+					</li>
+					<li>
+						Rental items cannot be retired or vaporized.
+					</li>
+					<li>
+						If a cards effects ever say "Do X and Y to do Z." You must do X and Y to do Z. An example is the Cursed Sword (Red Dragons Dungeon Item Card 6/19) "You may spend 1 energy and retire a card in your discard or deck to gain 3 strength." You must spend 1 energy and retire a card to gain the strength.
+					</li>
+					<li>
+						Many cards will have text that contradicts these rules. If a card contradicts the rules, follow the text on the card instead.
+					</li>
+					<li>
+						Like all card games, sometimes the cards can get stacked against you (you may have heard of the term 'mana-screwed'). If the dungeon is handing you a ton of tough monsters and expensive items, you may want a mulligan - if both you and your opponent agree the dungeon is unfair, you may do the following:
+						<ol>
+							<li>Take all of the cards from the dungeon and draw 5 off the top of the Dungeon Deck.</li>
+							<li>Shuffle those 10 cards together.</li>
+							<li>Deal out a new dungeon face-down from the 10 cards.</li>
+							<li>Place the remaining five cards on top of the Dungeon Deck.</li>
+							<li>Reveal the fourth card in the dungeon.</li>
+							<li>Resume Play.</li>
+						</ol>
+
+					</li>
+					
+					</p>
+				</div>
+				
+				
+				<div class="section">
+					<a class="anchor" name="12"></a>
+				<h3>Ending the Game:</h3>
+				<div class="leftColumn printHide" style="margin-top:20px; background-image:url('siteBgLight.jpg'); height:390px;"><div class="columnImageOverlay"></div></div>
+				<div class="rightColumn removeColumns">
+
+					<p>
+					When a turn ends in which the <a href="#boss">Boss</a> was defeated, acquired, or cleared; or there aren’t enough cards in the dungeon deck to replenish the dungeon (i.e. there are less than five cards in the dungeon after it’s refilled) the game is over. Each player then counts up how much gold everything  they’ve acquired over the course of the game is worth (their trophy pile, deck, and discard) - anything that was vaporized should not be counted. Whoever has the most gold wins! If there’s a tie, whoever has the most cards with the word “Sword” in their name wins. If that’s a tie, whoever has slain the most monsters wins. If that’s a tie, well, you just tied! Congrats! :D
+					</p>
+				</div>
+
+				</div>
+				<div class="section">
+				<a class="anchor" name="13"></a>
+					<h3>Glossary:</h3>
+					<p>
+						<div id="glossary">
+							<li><strong>Dungeon Deck:</strong> The deck of cards that feeds into the dungeon.</li>
+							<li><strong>Dungeon:</strong> The set of five cards the players explore each turn.</li>
+							<li><strong>Deck:</strong> The personal deck of a player.</li>
+							<li><strong>Discard:</strong> A players personal pile of discarded cards.</li>
+							<li><strong>Trophy Pile:</strong> A players personal pile of trophies (monsters, items, and obstacles).</li>
+							<li><strong>Draw:</strong> To take the top card off of your deck into your hand.</li>
+							<li><strong>Move:</strong> After playing one or more cards for their movement value, you may move up to that many rooms into the dungeon thereby changing the room you're interacting with.</li>
+							<li><strong>Check:</strong> After moving, if the room you moved to contains a face down card, you must look (check) to see what type of card it is. If it’s a monster or obstacle, reveal it. If it’s an item, you may reveal it or keep it hidden (face-down).</li>
+							<li><strong>Cost:</strong> The value on a item, monster, or obstacle that you must pay in order to acquire, defeat, or clear it.
+							<li><strong>Acquire:</strong> Pay the cost of an item and move it to your hand - if it has a trophy icon, move it to the trophy pile. You must show an item you acquire to your opponent.</li>
+							<li><strong>Defeat:</strong> Pay the cost of a monster and move it to your trophy pile.
+							<li><strong>Clear:</strong> Fulfill the requirements of an obstacle and move it to your trophy pile.
+							<li><strong>Rent:</strong> Acquire a rental item by paying its cost.
+							<li><strong>Peek:</strong> Look at a card in the dungeon and place it back face-down regardless of what type of card it is. Cards do not trigger their effects when peeked at. Do not show your opponent any cards you peek at. You may not reveal them.</li>
+							<li><strong>Reveal:</strong> Turn a face-down card in the dungeon face-up.</li>
+							<li><strong>Encounter:</strong> Enter a room with a revealed card. When a card is revealed in your room, it is also considered encountered.</li>
+							<li><strong>Hide:</strong> Turn a face-up card in the dungeon face-down.</li>
+							<li><strong>Retire:</strong> Move a card to your trophy pile. This is a great way to get rid of crappy cards and optimize your deck without losing gold!</li>
+							<li><strong>Vaporize:</strong> Move a card to the vaporized pile face-up (where it is no longer worth gold for any player). These cards are out of play, but some card effects allows you to interact with them.</li>
+							<li><strong>Swap:</strong> Exchange the positions of any specified cards. You may swap a card in a room with an empty room.</li>
+							<li><strong>Claim:</strong> To move the a card to your hand, deck, discard, or trophy pile from an opponent's hand, deck, discard, or trophy pile, dungeon, dungeon deck, or vaporized pile.</li>
+							<li><strong>Impassable:</strong> <em>(Attribute)</em> Cannot be passed while revealed.</li>
+							<li><strong>Stationary:</strong> <em>(Attribute)</em> While consolidating the dungeon, this card remains in it's current room. Move other cards, around it. Additionally, stationary cards cannot be rearranged by card effects which would otherwise allow them to be moved.</li>
+							<li><strong>Key:</strong> <em>(Attribute)</em> Unlock a card in your current room with the locked icon thereby paying its cost and acquiring, defeating, or clearing it.
+							<li><strong>Unlock:</strong> The action of paying a cost with the key.</li>
+							<li><a class="anchor" name="boss"></a><strong>Boss:</strong> <em>(Attribute)</em> When defeated, acquired, or cleared, the game ends once the turn is over.</li>
+							<li><a class="anchor" name="miniboss"></a><strong>Mini-Boss:</strong> <em>(Attribute)</em> When defeated, acquired, or cleared, it's dungeon and dungeon deck are shuffled and added to the other dungeon deck. Considered to be a "Boss" for the purposes of card effects.</li>
+						</div>
+					</p>
+				</div>
+				<div class="section">
+					<a class="anchor" name="19"></a>
+					<h3>Multi-User Dungeon Expansion (3-4 Players):</h3>
+					<br/>
+					
+					<h4 style="color:#ff00ff">Setup:</h4>
+					<br/>
+					<ol>
+						<li>Select 2 Dungeons to play.</li>
+						<li>Set aside their Bosses and the Mini-boss from the M.U.D.</li>
+						<li>Each player starts with a personal deck of 6 ‘Crappy Swords,’ 1 ‘Awkward Sword,’ 
+2 ‘Boots,’ and 1 ‘Mini Torch’ - all of which are marked with the <span class="kirsty">¡</span> icon.</li>
+						<li>Make room for your deck, discard, and trophy pile.</li>
+						<li>To select Rental Items  (which are easily identified by having green borders and being marked with an <span class="kirsty">R</span>), use the set number in the bottom right corner of each card (example: Rental Item 1/3). Select a 1, 2, and 3 and put them where players can reach them.</li>
+						
+						<li>Shuffle and divide the other M.U.D. cards evenly between the dungeon decks then shuffle each of those decks face down to form 2 dungeon decks.</li>
+						<ul><li>Note: For a faster game remove 10 random cards from each dungeon deck before adding the M.U.D. cards.</li></ul>
+						<li>Select the Boss you wish to use and turn it face down with the Mini-boss and mix them up.</li>
+						<li>Without looking at them, draw 9 cards from each dungeon deck, add 1 of the hidden Boss cards to each of them, and shuffle. Then draw 5 cards from each dungeon deck and place them below the stacks you just shuffled. Place the 15 card stacks back on the bottoms of each dungeon deck.</li>
+						<li>Drawing from each dungeon deck, place 5 face down cards in 2 rows within reach - these rows of 5 cards are called dungeons. Each card is a room.</li>
+						<li>Between the dungeon decks, make sure there is room for the vaporized pile and the tracker.</li>
+						<li>Each player shuffles their deck and draws 5 cards.</li>
+						<li>Choose a player to go first.</li>
+					</ol>
+					
+					<h4 style="color:#81ff00">Play:</h4>
+					<br/>
+					<p>Playing the with the M.U.D. Expansion Pack requires very few changes.</p>
+					<img src="mudDiagram.jpg"/>
+					<ul>
+						<li>At the start of your turn, choose which dungeon you wish to enter and rotate the tracker card to point towards the chosen dungeon. Unless otherwise specified, card effects can only refer to cards in the dungeon you've selected to explore.</li>
+					<li>Two Dungeons? If there are no cards in a dungeon deck, and there are less than 5 cards in its dungeon - or if a card with the <a href="#miniboss">‘Mini-boss’ attribute</a> has been defeated - then hide any remaining cards in that dungeon, shuffle them with any remaining cards in the current dungeon deck, and place them on top of the other dungeon deck. </li>
+						<ul><li>Note: For a faster game place these cards on the bottom of the dungeon deck instead.</li></ul>
+						<li>Cards that refer to "your opponent" refer to all opponents in turn order when playing with the M.U.D.</li>
+					</ul>
+
+				</div>
+				<div class="section">
+					<a class="anchor" name="14"></a>
+					<h3>Solo Rules:</h3>
+					<br>
+
+					<h4 style="color:#ffbf02">Weary Warrior:</h4>
+					<br/>
+					<a href="WearyWarriorReference.png">Download a printable reference card image!</a>
+					
+					<p>The Warrior has journeyed long and delved deep, and through her adventures, she has developed an immunity to card effects. In Weary Warrior, after each of your turns, you will play for her using your opponent's deck, discard, and trophy pile.</p>
+
+					<p>Before for you begin, replace her Awkward Sword with the Warrior's Sword - if you do not have the Warrior's Sword promo card, <a href="WarriorSwordDownloadable.png">you may print one for sleeved cards</a>, or you may treat her Awkward Sword as if it has 1 movement and 3 strength. You will take the first turn, when your turn is over, play a turn for the Warrior while observing the following rules:</p>
+					<ul>
+						<li>The warrior will attempt to move and clear cards twice on her turn, playing through up to 9 cards of her deck.</li>
+						<li>For her first action, draw a card from her deck.</li>
+						<ul>
+							<li>Move the tracker card the total movement for that card. <strong>Stop on any rooms with revealed cards.</strong> If she is unable to move because she has drawn a card with 0 movement, end her first action.</li>
+							<li>If the room has not been revealed, reveal it. <strong>Ignore effects of cards in the dungeon.</strong></li>
+							<li>Next she will attempt to acquire, defeat, or clear this card. To do this, you will draw up to four cards from her deck and respond based on the kind of card:</li>
+							<li>If the card in the dungeon is an item...</li>
+							<ul>
+								<li>Add up the total <strong>energy costs</strong> as you draw the cards. (Starter cards have a cost of 1 energy.)</li>
+								<li>If the total meets or exceeds the item's energy cost, she acquires the item to the bottom of her deck.</li>
+								<li>If a card was acquired, draw the top card of her deck. If its strength is less than 2, retire that card; otherwise discard it and repeat until you are able to retire a card. If there are no card which can be be retired because they have all been played, shuffle and repeat this process at the end of her turn until a card is retired. If at any time, all of the cards in her deck have a strength of 2 or more, shuffle, and retire the next card. <strong>The Warrior never exceeds 9 cards in her deck and discard at the end of her turn.</strong></li>
+							</ul>
+							<li>If the card is a monster...</li>
+							<ul>
+								<li>Add up the total strength values as you draw cards. If the total strength meets or exceeds the monster's defeat cost, she defeats it.</li>
+								<li>If she is unable to defeat the monster, and the monster is not surprised, end her turn.</li>
+							</ul>
+							<li>If it’s an obstacle, <strong>do not draw cards.</strong> She clears it automatically!</li>
+							<li>If the card is locked, <strong>do not draw cards.</strong> She unlocks that card automatically!</li>
+						</ul>
+						<li>Next she takes a second action, repeating the rules above, <strong>however draw up to only three cards, not four</strong> while attempting to acquire, defeat, or clear the following card.</li>
+						<li>Treat her deck like a player deck: Only shuffle her deck from her discard when she needs to draw more cards.</li>
+						<li>At the end of her turn, place the cards played into her discard. It's now your turn again!</li>
+						<li>Continue alternating turns with the Warrior. When the game ends, score as normal!</li>
+					</ul>
+					<br>
+					
+					<h4 style="color:#fffb02">Gold Greed:</h4>
+					<p>These solo rules provide a quick solo game that provide light challenge.</p>
+					<ul>
+						<li>Set aside room for a new pile of cards, this is your AI opponent's trophy pile.</li>
+						<li>Between the Discard and Consolidate turn phases, reveal the leftmost and rightmost cards. When these cards are revealed, they do not trigger any 'when revealed' or ‘when acquired/defeated/cleared’ effects.</li>
+						<li>Whichever of the two cards is worth more gold moves to the AI opponent's trophy pile; the other revealed card stays where it is. If they are worth equal amounts of gold, you must choose which moves to the AI opponent's trophy pile.</li> 
+						<li>The game ends normally.</li>
+					</ul>
+				<br/>
+				</div>
+				<div class="section">
+				<a class="anchor" name="18"></a>
+				<h3>Optional and<br>Alternate Rules:</h3>
+				<br>
+				<h4 style="color:#ffa800">Playing with a Dungeon Builder Set:</h4>
+				<p>
+					If you own a Dungeon Builder Set, the easiest way to play with it is to mix a single DBS with a single Dungeon. Dungeon Builder Sets are a great way to add variety to your game and make it last a little longer. There are currently 2 Dungeons and 4 Dungeon Builder Sets available for purchase, which makes for 8 combination dungeons!
+				</p>
+				<p>When setting up a Dungeon Builder Set, remove the Boss from the dungeon you’re playing with and choose which Boss you want to use (the original or the one included in the DBS). Then, the only difference is a slight change to <a href="#3">step 6 of how the game is setup</a>:</p>
+				<ol start="6">
+					<li>
+						Without looking at them, draw 9 cards from the dungeon deck, add the Boss card you chose to them, and shuffle. Then, draw 5 cards from the dungeon deck and place them below the 10 you just shuffled. Place those 15 cards at the bottom of the dungeon deck.
+					</li>
+				</ol>
+				<p>
+					Now you’re ready to play! Mix and match Dungeon Builder Sets and Dungeons to change up the game! Or use cards from multiple sets to build your own dungeons!
+				</p>
+				<br>
+				<h4 style="color:#00eaff">Less Memorization:</h4>
+				<p>Some folks don't like having to remember what went where - if that sounds like you, you'll definitely like this optional rule. Use colored tokens (one color per player) to identify which face down cards you’ve seen. If a card ever has both players' tokens on it, remove the tokens and reveal the card.</p>
+				
+				<br/>
+				
+				<h4>More solo, optional, and alternate rules to come!</h4>
+				<br/>
+			</div>
+			<div class="section">
+				<a class="anchor" name="16"></a>
+				<h3>Common Questions and Errata:</h3>
+				<p>As we get questions from players we'll be posting the answers to common ones here. If you have a question, email us!</p>
+				<ul>
+				<li>
+					<strong>Can you combine two dungeons to make a four player game?</strong>
+					<br>
+					With the release of Season 2, you can combine any 2 dungeon decks with the Multi-User Dungeon Expansion Pack to play with support for 3 and 4 players!
+				</li>
+				<li>
+					<strong>What happens if the Boss is vaporized?</strong>
+					<br>
+						A card with the <a href="#boss">'Boss' attribute</a> is vaporized the game does not end. At that point, you must continue to explore the dungeon until the dungeon deck runs out and there are less than 5 cards in the dungeon.
+				</li>
+				<li>
+					<strong>Are bosses still their card type?</strong>
+					<br>
+						Bosses can be monsters, items, or obstacles - if it says "Boss" in the effects, it's a boss. With that said, rules about its card type still apply. You can walk past an item or obstacle, monsters and obstacles must be revealed, and they can all be hidden with various items.
+				</li>
+				<li>
+					<strong>Can you vaporize a card that says it cannot be vaporized while it is hidden in the dungeon?</strong>
+					<br>
+					Yes. Cards that are facedown in the dungeon have no effects. Even if you know what a card is (for example, you've peeked at the card or have hidden it after it was revealed), while it is face down, it must be treated as an unknown card.
+				</li>
+				<li>
+					<strong>What does Haunted Armor's (<em>Red Dragon</em>, Monster Card 12/13) effect mean?</strong>
+					<br>
+						"When defeated, retire 2 cards from your deck or discard." What this means is you must retire two cards, and they can be from your deck or discard. You can retire both from your deck, both from your discard, or one from your deck and the other from your discard.
+				</li>
+				<li>
+					<strong>Do Shiny Cards like the Shiny Sword (<em>Blue Mammoth</em>, Item Card 17/19) trigger when peeked at?</strong>
+					<br>
+					Shiny cards like Shiny Sword or Shiny Door do not trigger when peeked at because card effects do not trigger when they are peeked at.
+				</li>
+				<li>
+					<strong>Search Engine (<em>Magic Computer</em>, Monster Card 3/6) Misprint:</strong>
+					<br>
+						"When defeated, automatically acquire, defeat, or clear the top non-boss card of the dungeon." Should read "When defeated, automatically acquire, defeat, or clear the top non-boss card of the dungeon deck."
+				</li>
+				<li>
+					<strong>What does Royal Jelly's (<em>Hive Empress</em>, Item Card 5/6) effect mean?</strong>
+					<br>
+					Both while the card is revealed in the dungeon and when played while you are in the dungeon, you may swap a monster to the room you are in.</li>
+				</ul>
+				
+			</div>
+			<div class="section">
+				<a class="anchor" name="17"></a>
+				<h3>Credits:</h3>
+				<div class="leftColumn" style="padding:10px; width:300px;">
+						<strong>Created By:</strong><br>Samuel Strick
+						<br><br>
+						
+						<strong>Illustrated By:</strong><br>Samuel Strick
+						<br><br>
+						
+						<strong>Playtesting:</strong><br> Ed Turner, Alex Guerrero-Randall, Glenn Shambach, Katie Dow, Aislinn Palmer, Kainoa Cambra, Yoni Skolnik, Colette Isabella, Jeremy Rozenhart
+						<br><br>
+						<strong>Editing:</strong><br> Katie Dow, Caylean Fox, Colette Taylor
+				</div>
+				<div class="rightColumn" style="padding:10px; width:300px;">
+					<strong>Design and Development by:</strong><br>Samuel Strick, Clayton Grey, and Glenn R. Shambach (Gardenin' Elm)
+					<br><br>
+					<strong>Special Thanks:</strong><br> Marla and Wesley Strick, Nick Haas, Glenn Shambach, Richard Hensman, Luis Francisco Baroni Coutinho, Aldo Ghiozzi, Dan Yarrington, Luke Crane
+						<br><br>
+						And an extra special thanks to the 1,713 Kickstarter backers who made this game a reality!
+				</div>
+
+			</div>
+		</div>
+				
+		<a href="#0"><div id="backToTop">Back To Top <strong>&uarr;</strong></div></a>			
+	</body>	
+	
+	<script>
+		var insults = ["Wow! You sure like flipping coins!", "Go punch a monster!", "Seriously?", "I thought we were trying to learn...", "Stop clicking me!!!!", "Have you played Province?", "My thumb's getting sore..."];
+		var things = ['You got ', 'You flipped ', "It's ", 'It came up ',''];
+		var t = Math.floor(Math.random()*4);
+		var i = 0;
+		var j = Math.floor(Math.random()*6);
+
+		function coinFlip() 
+		{
+			var thing = things[t];
+			return (Math.floor(Math.random() * 2) == 0) ? thing+'Heads!' : thing+'Tails!';
+		}
+		function flipResult() 
+		{
+			t++;
+			if(t>4) t = 0;
+			i++;
+
+			if(i>15 && Math.random()>.5)
+			{
+				j++;
+				if(j>6) j = 0;
+				
+				//var insult = insults[Math.floor(Math.random()*insults.length)];
+				var insult = insults[j];
+				document.getElementById("coinButton").value = insult;
+			}
+			else 
+			{
+				document.getElementById("coinButton").value = coinFlip();
+			}
+			
+		}
+	</script>	
+</html>
