@@ -703,7 +703,16 @@
 			</div>
 		</div>
 				
-		<a href="#0"><div id="backToTop">Back To Top <strong>&uarr;</strong></div></a>			
+		<a href="#0"><div id="backToTop">Back To Top <strong>&uarr;</strong></div></a>
+		<div id="tabs"></div>
+		<link href="../../gamePage/tabs.css" rel="stylesheet" type="text/css">
+		<script src="../../gamePage/tabs.js"></script>
+		<script>
+			$("#tabs").load("../../gamePage/tabs.html", function() {
+				setupTabs("shadows-of-arkham", "160413/shadow-elder-gods");
+				console.log("This");
+			});
+		</script>			
 	</body>	
 	
 	<script>
