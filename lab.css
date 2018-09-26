@@ -135,7 +135,7 @@ a
 #subContent
 {
 	position: absolute;
-	width: 800px;
+	/*width: 800px;*/
 	height: inherit;
 	margin-left: 50%;
 	left: -400px;
